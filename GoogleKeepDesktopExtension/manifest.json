@@ -1,0 +1,28 @@
+{
+  "name": "Google Keep Desktop Extension",
+  "version": "0.1",
+  "description": "Makes the list layout in Google Keep useful for desktop users.",
+/*  "background": {
+    "scripts": ["jquery-3.1.1.min.js", "background.js"],
+    "persistent": false
+  },*/
+  "content_scripts": [
+    { 
+      "matches": ["https://keep.google.com/*"],
+      "js": ["jquery-3.1.1.min.js", "on-screen.umd.min.js", "content_script.js"]
+    }
+  ],
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "There's a 'G' in this URL!"
+  },
+  "permissions" : [
+    "declarativeContent"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
