@@ -18,7 +18,9 @@ In Chrome developer tools -> Sources -> "Event Listener Breakpoints", it looks l
 
 
 focus to Window
+
 focus to document
+
 DOMFocusIn to body
 
 
